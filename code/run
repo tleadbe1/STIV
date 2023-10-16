@@ -7,8 +7,8 @@ set -ex
 
 # Uncomment the following line to run all simulations and plot the results. 
 
-#bash runEverything.sh 
+bash runEverything.sh 
 
 # This one will skip the simulations and just use the uploaded data to plot the results 
 
-bash plotEverything.sh
+#bash plotEverything.sh

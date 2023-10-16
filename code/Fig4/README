@@ -1,0 +1,11 @@
+Fig4 can be generated simply by executing:
+
+bash runAll.sh
+
+Each of the firectories holds the information for one of the pulling protocols. 
+Each contains an inputs.py file with all of the simulation parameters, 
+a runX0.py file which reads the inputs.py and runs an initialization Langevin simulation to get equilibrated initial data,
+a runSims.py file which runs the main Langevin and STIV simulations, and a computeThermo.py file which uses the data from
+the main simulation run to compute thermodynamics quantities. 
+
+This data is then compiled and plotted by plot.py in this directory. 

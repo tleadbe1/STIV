@@ -1,0 +1,19 @@
+metadata_version: 1
+name: Supporting code and data for "A statistical mechanics framework for constructing
+  non-equlilibrium thermodynamic models"
+description: As the title of the capsule says, this is the supporting code and data
+  for "A statistical mechanics framework for constructing non-equilibrium thermodynamic
+  models".
+authors:
+- name: Travis Leadbetter
+  affiliations:
+  - name: University of Pennsylvania
+- name: Prashant K. Purohit
+  affiliations:
+  - name: University of Pennsylvania
+- name: Celia Reina
+  affiliations:
+  - name: University of Pennsylvania
+corresponding_contributor:
+  name: Travis Leadbetter
+  email: tleadbe1@sas.upenn.edu

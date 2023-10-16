@@ -1,0 +1,39 @@
+
+The files in this directory reproduce the data and figure listed as Fig 2. in the main document. 
+
+
+### inputs.py
+
+This file sets all the simulation input parameters for this directory. 
+
+### runX0.py
+
+Runs a short Langevin dynamics with $\lambda \equiv \lambda(t=0)$ in order to produce an equilibrated initial condition. This step is not necessary, but helpful so that the Langevin and STIV simulations have the same starting initial conditions.
+
+produces x0.npy whice is used in runSims.py
+
+### runSims.py
+
+Reads in x0.npy as initial data, and then runs both Langevin and STIV simulations. The simulation time steps are stored as ts.npy, positions of particles from Langevin simulations are stored as xs.npy, the work done during each time step is stored as Ws.npy, and the mean and standard deviation internal variables are stored as mus.npy and sigs.npy respectively. 
+
+
+### computeMacro.py
+
+Using the outputs of prior simulations, this file computes the external force and entropy production for both simulations. These are outputted as langevinFex.npy, stivFex.npy, langevinEP.npy, and stivEP.npy. 
+
+### plot.py
+
+Using all the data from above, generates Fig 2. 
+
+
+------------------
+The figure can be produced using the following commands:
+
+python3 runX0.py
+python3 runSims.py
+python3 computeMacro.py
+python3 plot.py
+
+---------------------
+
+

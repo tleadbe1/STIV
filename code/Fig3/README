@@ -1,0 +1,32 @@
+
+The files in this directory reproduce the data and figure listed as Fig 3. in the main document. 
+
+
+### inputs.py
+
+This file sets all the simulation input parameters for this directory. 
+
+### runX0.py
+
+Runs a short Langevin dynamics with $\lambda \equiv \lambda(t=0)$ in order to produce an equilibrated initial condition. This step is not necessary, but helpful so that the Langevin and STIV simulations have the same starting initial conditions.
+
+produces x0.npy whice is used in runSims.py
+
+### runSims.py
+
+Reads in x0.npy as initial data, and then runs both Langevin and STIV simulations. The simulation time steps are stored as ts.npy, positions of particles from Langevin simulations are stored as xs.npy, the work done during each time step is stored as Ws.npy, and the mean and standard deviation internal variables are stored as mus.npy and sigs.npy respectively. 
+
+
+### plotDens.py
+
+Using all the data from above, generates Fig 3. 
+
+
+------------------
+The figure can be produced using the following commands:
+
+python3 runX0.py
+python3 runSims.py  -- This step may take a little while 
+python3 plotDens.py
+
+---------------------

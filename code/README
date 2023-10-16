@@ -1,0 +1,13 @@
+
+
+
+The basic sctructure of the capsule:
+
+/code/DynamicsSolvers 
+
+This directory contains python class definitions which carry the information necessary to run Langevin and stiv(Eyink) simulations. It has a version for a single particle in a quadratic potential (used in Fig2) and one for N particles in a mass spring chain where the springs are double welled interactions. 
+
+Each of the remaining direcories (eg /code/Fig2/ ... ) contains code to reproduce the corresponding figure. 
+
+In this base directory,  "run" is called to initiate all simulations and analysis. It really only calls runEverything.sh which in turn enters the Fig* directories and runs everything else. Find specific README's in each of the Fig* directories for more information. 
+

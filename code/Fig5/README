@@ -1,0 +1,28 @@
+The directory Linear17 holds information to run simulations of 17 masses. Linear62 holds information to run simulations of 62 masses. 
+
+To run all simulations in Linear17, execute:
+
+bash runAllSim.sh
+
+in the Linear17 directory. Each of the subdirectories is labeled by the pulling velocity (V2 corresponds to v = 2, and V1_8 corresponds to v = 1/8 etc.). To compute information about the velocity of the interface, run 
+
+python3.8 getFrontVel.py
+
+in the Linear17 directory. To compute the viscous dissipation in each simulation, run 
+
+python3.8 getVisDiss.py 
+
+in the Linear17 directory. Data produced this way will be stored in the VelData and VisDissData directories respectively. 
+
+To run the 62 mass simulations, enter the Linear62/V1 directory and run 
+
+python3.8 runX0.py
+python3.8 runSimSplit.py
+
+------
+
+Once all simulations have been run and the front velocity and viscous dissipation data computed, one can run 
+
+python3.8 plotAll.py 
+
+from the Fig5 directory. This will produce Fig5.pdf. 

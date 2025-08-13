@@ -1,7 +1,7 @@
 # STIV
 (Stochastic thermodynamics with internal variables)
 
-Supporting code for manuscript submission to PNAS Nexus named: A stastical mechanics framework for constructing non-equilibrium thermodynamic models.
+Supporting code for the paper: Leadbetter, Travis, Prashant K. Purohit, and Celia Reina. "A statistical mechanics framework for constructing nonequilibrium thermodynamic models." PNAS Nexus 2.12 (2023): pgad417.
 
 /environment/ 
 The docker file contained in this directory gives the python and ubuntu dependencies needed to run this code. 
